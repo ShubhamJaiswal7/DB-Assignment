@@ -1,0 +1,5 @@
+Answer for 1st and 2nd question
+
+1. The relationship between the "Product" and "Product_Category" entities as shown in the diagram is a many-to-one relationship. This means that many products can belong to one product category. The relationship is established through the category_id foreign key in the "Product" table, which references the id primary key in the "Product_Category" table.
+
+2. To ensure that each product in the "Product" table has a valid category assigned to it, you can set the category_id field as a foreign key that references the id of the "Product_Category" table and enforce referential integrity. This can be achieved by adding a NOT NULL constraint to the category_id column in the "Product" table and defining a foreign key constraint that references the "Product_Category" id. This ensures that every product must have a valid category_id that exists in the "Product_Category" table.
